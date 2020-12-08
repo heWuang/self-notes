@@ -4,7 +4,7 @@ module.exports = {
   lang: "en-US",
   title: "VitePress",
   description: "Vite & Vue powered static site generator.",
-
+  base: "/self-notes/",
   themeConfig: {
     docsDir: "docs",
     editLinks: true,
@@ -55,9 +55,9 @@ function getSpecialSidebar() {
           link: "/special/css/index",
         },
         {
-            text: "bfc",
-            link: "/special/css/bfc",
-          },
+          text: "bfc",
+          link: "/special/css/bfc",
+        },
       ],
     },
   ];
