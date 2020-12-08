@@ -4,7 +4,7 @@ module.exports = {
   lang: "en-US",
   title: "VitePress",
   description: "Vite & Vue powered static site generator.",
-  base: "/self-notes/",
+  base: "/notes/",
   themeConfig: {
     docsDir: "docs",
     editLinks: true,
@@ -13,7 +13,6 @@ module.exports = {
       { text: "Days", link: "/days/index" },
       {
         text: "Special",
-        ariaLabel: "Language Menu",
         items: [
           {
             text: "Css",
