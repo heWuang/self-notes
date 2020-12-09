@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: images/logo.jpg
+heroImage: ../images/logo.jpg
 heroAlt: Logo image
 heroText: PositiveEnergy1
 tagline: notes for study

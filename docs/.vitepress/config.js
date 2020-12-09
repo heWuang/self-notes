@@ -4,7 +4,6 @@ module.exports = {
   lang: "en-US",
   title: "VitePress",
   description: "Vite & Vue powered static site generator.",
-  base: "/notes/",
   themeConfig: {
     docsDir: "docs",
     editLinks: true,
@@ -33,12 +32,26 @@ function getGuideSidebar() {
   return [{ text: "guide", link: "/guide/index" }];
 }
 
+// 生产菜单
+function monthDays(mon, start = 1, end=30, days=30) {
+  let res =[]
+  while(start <= end) {
+    res.push({
+      text: `${start}号`,
+      link: `days/${mon}/${start}`
+    })
+    start++
+  }
+  return res
+}
+
 function getDaysSidebar() {
   return [
     { text: "days", link: "days/index" },
     {
       text: "2020年12月",
-      children: [{ text: "8号", link: "days/20-12/8" }],
+      collapsable: true,
+      children: monthDays('20-12',8, 30, 30)
     },
   ];
 }
